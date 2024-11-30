@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumbleBhiezz</title>
+    <link rel="icon" type="image/x-icon" href="../images/LOGO.jpg">
+    <link rel="stylesheet" href="home.css">
+    <script defer src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo"><img src="../images/logo2.png" class="logo" width="90" height="80"></h2>
+        <nav class="navigation">
+            <a class="navlink" href="home.html">Home</a>
+             <a class="navlink" href="product.html">Product</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <video autoplay loop muted>
+            <source src="../images/coff.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Coffee Draft</h1>
+            <p><b>Welcome to Kape-pait, where every sip tells a story!  Nestled in the heart of the city. Kung ang kape ay buhay, ikaw yung asukal—wala ka palagi, kaya ang pait!</b></p>
+            <a href="register.html">See how</a>
+        </div>
+    </div>
+
+    <section class="products-container">
+        <h2 data-animate>Our Products</h2>
+        <p data-animate>BumbleBhiezz honey is a testament to the artistry of nature <br> and the expertise of our skilled beekeepers.</p>
+
+        <div class="products">
+           
+        <div class="row" data-animate>
+            <div class="product-col-1">
+                <img src="../images/orig-honey.jpg" alt="honey classic">
+                <div class="layer-1">
+                    <h3>Original Honey</h3>
+                </div>
+            </div>
+            <div class="product-col-2">
+                <img src="../images/hon-banana.jpg" alt="honey banana">
+                <div class="layer-2">
+                    <h3>Honey Banana</h3>
+                </div>
+            </div>
+            <div class="product-col-3">
+                <img src="../images/strawberry-hon.jpg" alt="strawberry honey">
+                <div class="layer-3">
+                    <h3>Strawberry Honey</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <h1> Sip the Symphony of Nature's Sweetest Harmony.</h1>
+        <a href="product.html" class="hero-btn">SHOP HERE</a>
+    </section>
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Leading honey provider BumbleBhiezz takes pride in providing a golden syrup <br> of finest quality. 
+            Found in the midst flawless scenery, our beekeeping <br> are delicately maintained to guarantee the
+            health of our cherished <br> bees and the yield of remarkable honey.</p>
+    </section>
+    <section class="footer">
+
+
+<!-- wrapper -->
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+    
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail">
+                        </ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed">
+                        </ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">
+                        Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" 
+                            class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person">
+                        </ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail">
+                        </ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed">
+                        </ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">
+                        I agree to the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" 
+                            class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
