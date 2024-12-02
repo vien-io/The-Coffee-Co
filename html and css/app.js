@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("[data-animate]");
     const productSection = document.querySelector(".products-container");
     const header = document.querySelector("header");
+    const aboutUs = document.querySelector("[dark]");
 
     const observerOptions = {
         threshold: 0.1
@@ -9,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const observerOptions2 = {
         threshold: .5
     };
+
+  
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -42,9 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, observerOptions);
 
+
+    const aboutUsObserver = new IntersectionObserver((entries)=> {
+        entries.forEach(entry=>{
+                if(entry.isIntersecting){
+                    document.body.classList.add("visible");
+                    console.log("about us is now visible");
+                } else {
+                    document.body.classList.remove("visible");
+                }
+        });
+    }, {
+        threshold: 0,
+        rootMargin: "0px 0px -500px 0px"
+    });
+
     sections.forEach(section => observer.observe(section));
     productObserver.observe(productSection);
     headerObserver.observe(productSection);
+    aboutUsObserver.observe(aboutUs);
 
     window.addEventListener("scroll", ()=> {
         if (window.scrollY <= 450){

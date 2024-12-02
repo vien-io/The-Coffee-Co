@@ -11,10 +11,12 @@
 </head>
 <body>
     <header>
-        <h2 class="logo"><img src="../images/logo.png" class="logo" width="90" height="80"></h2>
+        <h2 class="logo"><img src="../images/ccc.png" class="logo" width="90" height="80"></h2>
+        <h2 class="logo2"><img src="../images/cccc.png" class="logo" width="150" height="50"></h2>
         <nav class="navigation">
-            <a href="register.html">Home</a>
+            <a href="home.html">Home</a>
             <a href="product.html">Product</a>
+             <a href="shop.html">Order</a>
             <button class="btnLogin-popup">Login</button>
         </nav>
     </header>
@@ -30,6 +32,7 @@
                     <p id="count">0</p>
                     </div>
                 </div>
+                <button name="submit" type="submit">Checkout</button>
                 <div id="cartItem">Your cart is empty</div>
                 <div class="foot">
                     <h3>Total</h3>
@@ -40,6 +43,108 @@
     </div>
     
     <script src="shop.js"></script>
+
+
+
+
+
+       <!-- footer section starts here -->
+
+<section class="footerr">
+
+    <div class="share">
+        <a href="home.html" class="fab fa-facebook-f"></a>
+        <a href="home.html" class="fab fa-instagram"></a>
+        <a href="home.html" class="fab fa-tiktok"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+    </div>
+
+    <b><div class="credit">created by <span>The Coffee Co.</span> | all rights reserved</div></b>
+</section>
+
+<!-- footer section ends here -->
+
+
+
+
+
+       
+
+
+<!-- wrapper -->
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+    
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail">
+                        </ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed">
+                        </ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">
+                        Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" 
+                            class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person">
+                        </ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail">
+                        </ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed">
+                        </ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">
+                        I agree to the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" 
+                            class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 </body>
 </html>

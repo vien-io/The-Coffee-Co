@@ -10,6 +10,7 @@ html, body {
 
 body{
     background-color: #FAF2DF;
+    transition: background-color 1s;
 }
 
 header{
@@ -54,10 +55,23 @@ header.visible::before{
     user-select: none;
     transition: filter 2s ease;
 }
+.logo2{
+    user-select: none;
+    transition: filter 2s ease;
+    position: relative;
+    right: 380px;
+    top: 12px;
+}
 header.visible .logo img{
     filter: grayscale(0%) brightness(0) invert(0);
 }
 header.visible .logo img.change-logo{
+    filter: grayscale(0%) brightness(100%) invert(1);
+}
+header.visible .logo2 img{
+    filter: grayscale(0%) brightness(0) invert(0);
+}
+header.visible .logo2 img.change-logo{
     filter: grayscale(0%) brightness(100%) invert(1);
 }
 .navigation {
@@ -196,14 +210,17 @@ header.visible .btnLogin-popup{
     transition: background-color 1s, color 1s;
     padding-top: 250px;
     text-align: center;
+    font-size: 2rem;
 }
 .products-container.visible{
     background-color: #FAF2DF;
     color: #E53F00;
 }
 .products-container p{
+    margin-left: 10rem;
+    margin-right: 10rem;
     color:#ffffff;
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -240,6 +257,7 @@ header.visible .btnLogin-popup{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-col-1{
@@ -342,6 +360,7 @@ header.visible .btnLogin-popup{
 
 .product-col-3 img{
     width: 100%;
+    height: 16rem;
     display: block;
 }
 
@@ -376,10 +395,142 @@ header.visible .btnLogin-popup{
     bottom: 49%;
     opacity: 1;
 }
+.product-col-4{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-col-4 img{
+    width: 100%;
+    display: block;
+}
+
+.layer-4{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer-4:hover{
+    background: #F4C165;
+}
+
+.layer-4 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #4e2a00;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer-4:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.product-col-5{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-col-5 img{
+    width: 100%;
+    display: block;
+}
+
+.layer-5{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer-5:hover{
+    background: #F4C165;
+}
+
+.layer-5 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #4e2a00;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer-5:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.product-col-6{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-col-6 img{
+    width: 100%;
+    display: block;
+}
+
+.layer-6{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer-6:hover{
+    background: #F4C165;
+}
+
+.layer-6 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #4e2a00;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer-6:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
 
 .cta{
-    margin: 100px auto;
-    width: 80%;
+    margin: 550px auto;
+    width: 100%;
     height: 80%;
     background-image: url(../images/cta-bg.jpg);
     background-position: center;
@@ -414,7 +565,7 @@ header.visible .btnLogin-popup{
     transition: 1s;
 }
 
-.footer{
+/* .footer{
     width: 100%;
     text-align: center;
     padding: 30px 0;
@@ -433,8 +584,11 @@ header.visible .btnLogin-popup{
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-}
+} */
 
+video{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Create a shadow effect around the video */
+}
 
 
 
@@ -613,4 +767,179 @@ header.visible .btnLogin-popup{
 
 .login-register p a:hover{
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* aboutPage */
+
+:root{
+    --main-color: #d3ad7f;
+    --gray: #252525;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+
+}
+.about {
+    padding-top: 190px;
+    padding-bottom: 250px;
+}
+/* [dark].visible{
+    background-color: rgb(0, 0, 0);
+} */
+body.visible{
+    background-color: rgb(0, 0, 0);
+}
+.about .rowP{
+    display: flex; flex-wrap: wrap;
+    align-items: center;
+    background: var(--gray);
+    margin: 2rem;
+}
+
+.about .rowP .image{
+    flex: 5 5 45rem;
+}
+
+.about .rowP .image img{
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.about .rowP .contentP{
+    flex: 1 1 45rem;
+    padding: 5rem;
+}
+
+.about .rowP .contentP h3{
+    font-size: 3rem;
+    color: #fff;
+    transition: color 1s;
+}
+
+.about .rowP .contentP p{
+    font-size: .9rem;
+    color: var(--gray);
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-transform: none;
+    transition: color 1s;
+}
+body.visible .about .rowP .contentP h3{
+    color: #fff;
+}
+body.visible .about .rowP .contentP p{
+    color: #fff;
+}
+
+
+.heading{
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    transition: color 1s;
+    position: relative;
+    top: 30px;
+    transition: font-size 1s;
+}
+body.visible .heading{
+    font-size: 4rem;
+}
+
+.heading span{
+    color: #000000;
+    text-transform: uppercase;
+    transition: color 1s;
+}
+
+body.visible .heading{
+    color: #fff;
+}
+body.visible .heading span{
+    color: #fff;
+    color: var(--main-color);
+}
+
+.btnP{
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.btnP:hover{
+    letter-spacing: .2rem;
+}
+
+
+
+/* footer */
+.footerr{
+    background: var(--gray);
+    text-align: center;
+}
+
+.footerr .share{
+    padding: .1rem 0;
+    padding-top: 40px;
+}
+
+.footerr .share a{
+    height: 3.4rem;
+    width: 3.4rem;
+    line-height: 3.4rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border: var(--border);
+    margin: 0;
+    border-radius: 50%;
+}
+
+.footerr .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footerr .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+    gap: 0.6rem;
+    
+}
+
+.footerr .links a{
+    text-decoration: none;
+    padding: .7rem 1rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 1rem;
+}
+
+.footerr .links a:hover{
+    background: var(--main-color);
+}
+
+.footerr .credit{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: .5rem;
+}
+
+.footerr .credit span{
+    color: var(--main-color);
 }

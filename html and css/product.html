@@ -10,73 +10,123 @@
     <script defer src="app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
 
     <header>
-        <h2 class="logo"><img src="../images/logo.png" class="logo" width="90" height="80"></h2>
+        <h2 class="logo"><img src="../images/ccc.png" class="logo" width="90" height="80"></h2>
+        <h2 class="logo2"><img src="../images/cccc.png" class="logo" width="150" height="50"></h2>
         <nav class="navigation">
             <a href="home.html">Home</a>
             <a href="product.html">Product</a>
+            <a href="shop.html">Order</a>
             <button class="btnLogin-popup">Login</button>
         </nav>
     </header>
 
-    <section class="products" content>
-        <h2>Our Products</h2>
-        <p>BumbleBhiezz honey is a testament to the artistry of nature and the expertise of our skilled beekeepers. <br>
-            Harvested from the finest nectar sources, our honey is a symphony of flavors, 
-            embodying the unique <br> characteristics of the diverse flowers our bees frequent. 
-            From the robust and earthy tones <br> of wildflowers to the delicate sweetness of orange blossoms, 
-            each jar of BumbleBhiezz <br> honey is a journey through the bountiful landscapes where our bees roam.</p>
+
+
+<!-- menu section starts here -->
+
+<section class="menu" id="menu">
+    <h1 class="headingP"> our <span>menu</span></h1>
+    
+<div class="menuGr">
+    <h2 class="menu2">Cold Choices</h2>
+    <div class="box-container">
+        <div class="box">
+            <img src="../images/iced-americano.png" alt="iced americano">
+            <h3>Cofico <caps>Classic</caps> Americano</h3>
+            <div class="price">₱115 <span class="strike">₱120</span></div>
+        </div>
+
+        <div class="box">
+            <img src="../images/iced-cafelatte.png" alt="iced cafe latte">
+            <h3>Cofico <caps>Smooth</caps> latte</h3>
+            <div class="price">₱155 <span class="strike">₱160</span></div>
+        </div>
+
+        <div class="box">
+            <img src="../images/iced-matchalatte.png" alt="iced matcha latte">
+            <h3>Cofico <caps>mc</caps> matcha latte</h3>
+            <div class="price">₱165 <span class="strike">₱170</span></div>
+        </div>
+
+        
+    </div>
+</div>
+<div class="menuGr">
+    <h2 class="menu2">Hot Choices</h2>
+    <div class="box-container">
+       
+
+        <div class="box">
+            <img src="../images/hot-americano.png" alt="hot americano">
+            <h3>Cofico <caps>Classic</caps> americano</h3>
+            <div class="price">₱110 <span class="strike">₱120</span></div>
+        </div>
+
+        <div class="box">
+            <img src="../images/hot-cafelatte.png" alt="hot cafe latte">
+            <h3>Cofico <caps>Smooth</caps> latte</h3>
+            <div class="price">₱150 <span class="strike">₱160</span></div>
+        </div>
+
+        <div class="box">
+            <img src="../images/hot-matchalatte.png" alt="hot matcha latte">
+            <h3>Cofico <caps>mc</caps> matcha latte</h3>
+            <div class="price">₱160 <span class="strike">₱170</span></div>
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
+
+<!-- menu section ends here -->
+
+    <section class="products" dark>
+        <h2>Non-Coffee Based</h2>
+       
 
         <div class="row">
             <div class="product-col-1">
                 <img src="../images/orig-honey.jpg" alt="honey classic">
                 <div class="layer-1">
-                    <h3><b>Original Honey</b> <br><br>
-                        <i>A testament to the authenticity and richness of pure, 
-                        unadulterated honey is BumbleBhiezz Original Honey. 
-                        This golden elixir, which is made from the nectar of various wildflowers, 
-                        embodies nature in every drop. Our Original Honey's flavor profile is well-balanced, 
-                        making it ideal for spoonfuls of pure bliss or for adding a hint of natural sweetness to your favorite dishes.</i>
+                    <h3><b>Cofico Pure Matcha (Matcha Latte)
+                    </b> <br><br>
+                        <i>Smooth and creamy green tea with steamed milk.</i>
                     </h3>
                 </div>
             </div>
             <div class="product-col-2">
                 <img src="../images/hon-banana.jpg" alt="honey banana">
                 <div class="layer-2">
-                    <h3><b>Honey Banana</b> <br><br>
-                        <i>Take a trip to the tropics with BumbleBhiezz Honey Banana. 
-                        This special blend combines the golden goodness of our premium honey with the velvety, 
-                        smooth notes of ripe bananas. The outcome is a flavor that will take your taste buds 
-                        to a tropical paradise—one that is rich and decadent. Pour it over yogurt or pancakes, 
-                        or eat it straight from the jar for a sweet escape.</i>
+                    <h3><b>Cofico Mint Chocolate Bliss (Mint Chocolate)
+                    </b> <br><br>
+                        <i>A refreshing blend of mint and chocolate with creamy milk.
+                        </i>
                     </h3>
                 </div>
             </div>
             <div class="product-col-3">
                 <img src="../images/strawberry-hon.jpg" alt="strawberry honey">
                 <div class="layer-3">
-                    <h3><b>Strawberry Honey</b> <br><br>
-                        <i>There's only one place to go for a burst of fruity sweetness: 
-                        BumbleBhiezz Strawberry Honey. With a delightful balance of floral and fruity notes, 
-                        this honey variety is infused with the essence of ripe strawberries. 
-                        With the inherent charm of strawberries and honey, you can use it as a glaze for desserts, 
-                        to spread on toast, or to add your morning tea.</i>
+                    <h3><b></b>Cofico Strawberry Dream (Strawberry Milk)</b> <br><br>
+                        <i>A sweet, fruity blend of strawberry syrup and fresh milk.</i>
                     </h3>
                 </div>
             </div>
             <div class="product-col-4">
                 <img src="../images/orig-honey.jpg" alt="honey classic">
                 <div class="layer-4">
-                    <h3><b>Original Honey</b> <br><br>
-                        <i>A testament to the authenticity and richness of pure, 
-                        unadulterated honey is BumbleBhiezz Original Honey. 
-                        This golden elixir, which is made from the nectar of various wildflowers, 
-                        embodies nature in every drop. Our Original Honey's flavor profile is well-balanced, 
-                        making it ideal for spoonfuls of pure bliss or for adding a hint of natural sweetness to your favorite dishes.</i>
+                    <h3><b>Cofico Oreo Delight (Oreo)
+                    </b> <br><br>
+                        <i>Crushed Oreo cookies blended with milk for a sweet treat.
+                        </i>
                     </h3>
                 </div>
             </div>
@@ -111,6 +161,30 @@
         <h1> Sip the Symphony of Nature's Sweetest Harmony.</h1>
         <a href="shop.html" class="hero-btn">ORDER NOW</a>
     </section>
+
+
+     <!-- footer section starts here -->
+
+<section class="footerr">
+
+    <div class="share">
+        <a href="home.html" class="fab fa-facebook-f"></a>
+        <a href="home.html" class="fab fa-instagram"></a>
+        <a href="home.html" class="fab fa-tiktok"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+    </div>
+
+    <b><div class="credit">created by <span>The Coffee Co.</span> | all rights reserved</div></b>
+</section>
+
+<!-- footer section ends here -->
 
 
 

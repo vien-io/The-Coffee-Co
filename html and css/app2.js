@@ -1,10 +1,25 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     const sections = document.querySelectorAll("[content]");
     const header = document.querySelector("header");
+    const nonCoff = document.querySelector("[dark]");
 
     const observerOptions = {
         threshold: 0.1,
     };
+
+    const nonCoffObserver = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=> {
+            if (entry.isIntersecting) {
+                document.body.classList.add("dark");
+                console.log("dark here");
+            } else {
+                document.body.classList.remove("dark");
+            }
+        });
+    }, {
+        threshold: 0,
+        rootMargin: "0px 0px -700px 0px"
+    });
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -18,6 +33,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }, observerOptions);
 
     sections.forEach(section => observer.observe(section));
+    nonCoffObserver.observe(nonCoff);
 });
 
 
