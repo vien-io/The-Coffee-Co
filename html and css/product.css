@@ -42,7 +42,7 @@ header::before{
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fdca3e;
+    background: #8b4513;
     opacity: 0;
     transition: opacity 0.6s ease;
     z-index: -1;
@@ -510,8 +510,8 @@ header.visible .btnLogin-popup:hover{
 }
 
 .hero-btn:hover{
-    border: 1px solid #FADA5E;
-    color: #FADA5E;
+    border: 1px solid #ffe4c4;
+    color: #ffe4c4;
     background: #311813;
     transition: 1s;
 }
@@ -645,7 +645,7 @@ header.visible .btnLogin-popup:hover{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #FADA5E;
+    color: #ffe4c4;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -654,7 +654,7 @@ header.visible .btnLogin-popup:hover{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #FADA5E;
+    color: #ffe4c4;
     line-height: 57px;
 }
 

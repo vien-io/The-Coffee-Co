@@ -36,7 +36,7 @@ header::before{
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fdca3e;
+    background: #8b4513;
     opacity: 0;
     transition: opacity 0.6s ease;
     z-index: -1;
@@ -159,7 +159,7 @@ header.visible .btnLogin-popup{
 }
 header.visible .btnLogin-popup:hover{
     background: #4e2a00;
-    color: #fdca3e;
+    color: #ffe4c4;
 }
 
 .navigation .btnLogin-popup:hover{
@@ -192,7 +192,7 @@ header.visible .btnLogin-popup{
 }
 
 .content h1{
-    color: #FECC27;
+    color: #f4a460;
     font-size: 6.3rem;
     margin-top: 80px;
 }
@@ -214,7 +214,7 @@ header.visible .btnLogin-popup{
 }
 .products-container.visible{
     background-color: #FAF2DF;
-    color: #E53F00;
+    color: #301807;
 }
 .products-container p{
     margin-left: 10rem;
@@ -227,7 +227,7 @@ header.visible .btnLogin-popup{
     transition: transform 0.6s ease, color 4s;
 }
 .products-container p.visible{
-    color:#4e2a00;
+    color:#000000;
 }
 .products{
     width: 80%;
@@ -237,7 +237,7 @@ header.visible .btnLogin-popup{
 
 
 .products h2{
-    color: #E53F00;
+    color: #bb6528;
     font-size: 36px;
     font-weight: 600;
 }
@@ -284,7 +284,7 @@ header.visible .btnLogin-popup{
 }
 
 .layer-1:hover{
-    background: #F4C165;
+    background: #ede0d4;
 }
 
 .layer-1 h3{
@@ -329,13 +329,13 @@ header.visible .btnLogin-popup{
 }
 
 .layer-2:hover{
-    background: #FCEC89;
+    background: #e6ccb2;
 }
 
 .layer-2 h3{
     width: 100%;
     font-weight: 500;
-    color: #4e2a00;
+    color: #321414;
     font-size: 26px;
     bottom: 0;
     left: 50%;
@@ -374,13 +374,13 @@ header.visible .btnLogin-popup{
 }
 
 .layer-3:hover{
-    background: #FDCFCF;
+    background: #ddb892;
 }
 
 .layer-3 h3{
     width: 100%;
     font-weight: 500;
-    color: #4e2a00;
+    color: #321414;
     font-size: 26px;
     bottom: 0;
     left: 50%;
@@ -418,13 +418,13 @@ header.visible .btnLogin-popup{
 }
 
 .layer-4:hover{
-    background: #F4C165;
+    background: #b08968;
 }
 
 .layer-4 h3{
     width: 100%;
     font-weight: 500;
-    color: #4e2a00;
+    color: #ffefd5;
     font-size: 26px;
     bottom: 0;
     left: 50%;
@@ -462,13 +462,13 @@ header.visible .btnLogin-popup{
 }
 
 .layer-5:hover{
-    background: #F4C165;
+    background: #7f5539;
 }
 
 .layer-5 h3{
     width: 100%;
     font-weight: 500;
-    color: #4e2a00;
+    color: #ffefd5;
     font-size: 26px;
     bottom: 0;
     left: 50%;
@@ -506,13 +506,13 @@ header.visible .btnLogin-popup{
 }
 
 .layer-6:hover{
-    background: #F4C165;
+    background: #9c6644;
 }
 
 .layer-6 h3{
     width: 100%;
     font-weight: 500;
-    color: #4e2a00;
+    color: #ffefd5;
     font-size: 26px;
     bottom: 0;
     left: 50%;
@@ -558,9 +558,9 @@ header.visible .btnLogin-popup{
 }
 
 .hero-btn:hover{
-    border: 1px solid #FADA5E;
+    border: 1px solid #ffe4c4;
     background: #311813;
-    color: #FADA5E;
+    color: #ffe4c4;
     transition: 1s;
 }
 
@@ -613,7 +613,7 @@ video{
     z-index: 200;
 }
 .user-info {
-    color: #ffe900;
+    color: #ffefd5;
     font-size: 1.5rem;
     display: none;
     text-align: left;
@@ -662,9 +662,9 @@ video{
     right: 0;
     width: 45px;
     height: 45px;
-    background: #fdca3e;
+    background: #ffefd5;
     font-size: 2em;
-    color: #4e2a00;
+    color: #321414;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -675,7 +675,7 @@ video{
 
 .form-box h2{
     font-size: 2em;
-    color: #FFD52D;
+    color: #ffefd5;
     text-align: center;
 }
 
@@ -683,7 +683,7 @@ video{
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #4e2a00;
+    border-bottom: 2px solid #321414;
     margin: 30px 0;
 }
 
@@ -693,7 +693,7 @@ video{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #FFD52D;
+    color: #ffefd5;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -713,7 +713,7 @@ video{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #FADA5E;
+    color: #ffe4c4;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -722,13 +722,13 @@ video{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #FADA5E;
+    color: #ffe4c4;
     line-height: 57px;
 }
 
 .remember-forgot{
     font-size: .9em;
-    color: #FFD52D;
+    color: #ffe4c4;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -736,12 +736,12 @@ video{
 }
 
 .remember-forgot label input{
-    accent-color: #4e2a00;
+    accent-color: #ffe4c4;
     margin-right: 3px;
 }
 
 .remember-forgot a{
-    color: #FFD52D;
+    color: #ffe4c4;
     text-decoration: none;
 }
 
@@ -752,31 +752,32 @@ video{
 .btn{
     width: 100%;
     height: 45px;
-    background: #fdca3e;
+    background: #ffe4c4;
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: #4e2a00;
+    color: #321414;
     font-weight: 500;
 }
 
 .login-register{
     font-size: .9em;
-    color: #FFD52D;
+    color: #ffe4c4;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a{
-    color: #FFD52D;
+    color: #321414;
     text-decoration: none;
     font-weight: 600;
 }
 
 .login-register p a:hover{
+    color: #ffe4c4;
     text-decoration: underline;
 }
 
@@ -791,7 +792,7 @@ video{
 /* aboutPage */
 
 :root{
-    --main-color: #d3ad7f;
+    --main-color: #321414;
     --gray: #252525;
     --bg: #010103;
     --border: .1rem solid rgba(255, 255, 255, .3);
@@ -865,7 +866,7 @@ body.visible .heading{
 }
 
 .heading span{
-    color: #000000;
+    color: #f4a460;
     text-transform: uppercase;
     transition: color 1s;
 }
@@ -952,7 +953,7 @@ body.visible .heading span{
 }
 
 .footerr .credit span{
-    color: var(--main-color);
+    color: #f4a460;
 }
 
 
@@ -995,7 +996,7 @@ header.visible .btnLogged{
 }
 header.visible .btnLogged:hover{
     background: #4e2a00;
-    color: #fdca3e;
+    color: #321414;
 }
 
 .navigation .btnLogged:hover{

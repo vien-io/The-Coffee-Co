@@ -402,7 +402,7 @@ button:hover{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #FADA5E;
+    color: #ffe4c4;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -411,7 +411,7 @@ button:hover{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #FADA5E;
+    color: #ffe4c4;
     line-height: 57px;
 }
 

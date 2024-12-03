@@ -85,7 +85,7 @@ header{
 
 .text-box{
     width: 90%;
-    color: #FADA5E;
+    color: #ffe4c4;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,8 +108,8 @@ header{
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #FADA5E;
-    border: 1px solid #FADA5E;
+    color: #ffe4c4;
+    border: 1px solid #ffe4c4;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -118,7 +118,7 @@ header{
 }
 
 .hero-btn:hover{
-    border: 1px solid #FADA5E;
+    border: 1px solid #ffe4c4;
     background: #4e2a00;
     transition: 1s;
 
@@ -229,7 +229,7 @@ header{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #FADA5E;
+    color: #ffe4c4;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -238,7 +238,7 @@ header{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #FADA5E;
+    color: #ffe4c4;
     line-height: 57px;
 }
 
