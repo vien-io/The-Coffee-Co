@@ -67,5 +67,10 @@ btnLogged.addEventListener('click', ()=>{
 iconClose.addEventListener('click', ()=>{
     wrapper.classList.remove('active-popup');
 })
+// if (!isLoggedIn) {
+//     btnPopup.addEventListener('click', ()=>{
+//         wrapper.classList.add('active-popup');
+//     })
+// }
 
 

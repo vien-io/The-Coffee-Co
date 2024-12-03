@@ -1,24 +1,25 @@
 <?php
-session_start(); 
+session_start(); // Start or resume the session
 
-// // check if user is logged in (session variable 'user_id' exists)
-// if (!isset($_SESSION['user_id'])) {
-//     // if not logged in, show login prompt or redirect to login page
-//     header('Location: login.php'); // or  echo an error message
-//     exit();
-// }
-
-
-
-$user_id = $_SESSION['user_id']; // retrieve the user ID from session
+// Check if session variables are set
+if (isset($_SESSION['user_id'])) {
+    echo "Session is active.<br>";
+    echo "User ID: " . $_SESSION['user_id'] . "<br>";
+    echo "Username: " . $_SESSION['username'] . "<br>";
+    echo "Email: " . $_SESSION['email'] . "<br>";
+} else {
+    echo "Session is not active or variables are not set.<br>";
+}
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BumbleBhiezz</title>
+    <title>Cafe Amore</title>
     <link rel="icon" type="image/x-icon" href="../images/LOGO.jpg">
     <link rel="stylesheet" href="product.css">
     <script defer src="app2.js"></script>

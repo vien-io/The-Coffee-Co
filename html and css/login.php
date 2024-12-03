@@ -56,6 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Successful login
         session_start(); // Start the session
         $_SESSION['user_id'] = $user['id']; // Store the user's ID in session
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['email'] = $email;
 
         echo json_encode([
             "message" => "Login successful!",
@@ -65,6 +67,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "email" => $email
             ]
         ]);
+
+        error_log("User ID: " . $_SESSION['user_id']); 
+    error_log("Username: " . $_SESSION['username']);
+    error_log("Email: " . $_SESSION['email']);
+
     } else {
         // Incorrect password
         echo json_encode(["error" => "Invalid email or password!"]);
