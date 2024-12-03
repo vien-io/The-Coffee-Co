@@ -360,7 +360,6 @@ header.visible .btnLogin-popup{
 
 .product-col-3 img{
     width: 100%;
-    height: 16rem;
     display: block;
 }
 
@@ -531,8 +530,8 @@ header.visible .btnLogin-popup{
 .cta{
     margin: 550px auto;
     width: 100%;
-    height: 80%;
-    background-image: url(../images/cta-bg.jpg);
+    height: 100%;
+    background-image: url(../images/cta-bg.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
