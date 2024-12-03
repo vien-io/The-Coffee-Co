@@ -47,7 +47,7 @@ const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const btnLogged = document.querySelector('.btnLogged'); // logged-in button
 const iconClose = document.querySelector('.icon-close');
-console.log(wrapper, loginLink, registerLink, btnPopup, iconClose);
+// console.log(wrapper, loginLink, registerLink, btnPopup, iconClose);
 
 registerLink.addEventListener('click', ()=>{
     wrapper.classList.add('active');
