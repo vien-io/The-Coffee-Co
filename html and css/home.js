@@ -82,7 +82,9 @@ const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
+const btnLogged = document.querySelector('.btnLogged'); // logged-in button
 const iconClose = document.querySelector('.icon-close');
+console.log(wrapper, loginLink, registerLink, btnPopup, iconClose);
 
 registerLink.addEventListener('click', ()=>{
     wrapper.classList.add('active');
@@ -93,6 +95,9 @@ loginLink.addEventListener('click', ()=>{
 })
 
 btnPopup.addEventListener('click', ()=>{
+    wrapper.classList.add('active-popup');
+})
+btnLogged.addEventListener('click', ()=>{
     wrapper.classList.add('active-popup');
 })
 
