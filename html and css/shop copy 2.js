@@ -111,21 +111,6 @@ function displaycart(){
 
 
 
-
-function proceedToCheckout() {
-    if (cart.length > 0) {
-        // Store the cart in local storage for passing to the next page
-        localStorage.setItem('cart', JSON.stringify(cart));
-
-        // Redirect to the confirmation page
-        window.location.href = 'confirmation.html'; // Change to the actual confirmation page URL
-    } else {
-        alert('Your cart is empty. Please add items to your cart first.');
-    }
-}
-
-
-
 // observers
 document.addEventListener("DOMContentLoaded", ()=> {
     const scrolledDown = document.querySelector("[scrolled]");

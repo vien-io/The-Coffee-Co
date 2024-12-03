@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfd98;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Confirmation Page Wrapper */
+.confirmation-page {
+    background-color: hsl(61, 100%, 89%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Title */
+.confirmation-page h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Order Summary */
+#order-summary {
+    margin-top: 20px;
+}
+
+/* Order Items */
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order-item p {
+    flex: 1;
+    padding-left: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+.order-item h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Total Section */
+h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Buttons */
+button {
+    background-color: #f4c165;
+    color: rgb(60, 60, 60);
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffa600
+}
+
+button:active {
+    background-color: #bf8314
+}
+
+button.cancel {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button.cancel:hover {
+    background-color: #e53935;
+}
+
+button.cancel:active {
+    background-color: #c13534;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .confirmation-page {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .order-item p {
+        padding-left: 0;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}

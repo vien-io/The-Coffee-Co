@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <div class="confirmation-page">
+        <h2>Order Confirmation</h2>
+        <div id="order-summary"></div>
+        <button onclick="finalizeOrder()">Confirm Order</button>
+        <button class="cancel" onclick="cancelOrder()">Cancel</button>
+    </div>
+    
+    <script>
+        // Fetch cart data from localStorage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        // Display cart details on the confirmation page
+        function displayOrderSummary() {
+            if (cart.length > 0) {
+                let orderSummary = '<h3>Your Cart</h3>';
+                let total = 0;
+                cart.forEach(item => {
+                    orderSummary += `
+                        <div class="order-item">
+                            <img src="${item.image}" alt="${item.title}" />
+                            <p>${item.title}</p>
+                            <h2>$${item.price}.00</h2>
+                        </div>
+                    `;
+                    total += item.price;
+                });
+    
+                orderSummary += `<h3>Total: $${total}.00</h3>`;
+                document.getElementById('order-summary').innerHTML = orderSummary;
+            }
+        }
+    
+        displayOrderSummary();
+    
+        // Handle order confirmation
+        function finalizeOrder() {
+            // Here, you can send the order details to your server for processing, payment, etc.
+            alert('Your order has been confirmed! Thank you for your purchase.');
+            localStorage.removeItem('cart'); // Clear the cart after order confirmation
+            window.location.href = 'thankyou.html'; // Redirect to a thank you page
+        }
+
+        // Handle order cancellation
+        function cancelOrder() {
+            // Clear the cart and redirect the user back to the shopping page or home page
+            localStorage.removeItem('cart'); // Optionally clear cart if the user cancels
+            window.location.href = 'shop.html'; // Redirect to the shopping page or home page
+        }
+    </script>
+</body>
+</html>
