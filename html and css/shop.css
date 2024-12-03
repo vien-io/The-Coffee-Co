@@ -545,3 +545,91 @@ button:hover{
 .footerr .credit span{
     color: var(--main-color);
 }
+
+
+
+
+
+
+
+/* logged in  */
+
+/* Initially hide the logged-in button and show the login button */
+.btnLogged {
+    display: none;
+    width: 130px;
+    height: 50px;
+    background: #fefffc26;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+/* Show the logged-in button after login */
+.header.logged-in .btnLogged {
+    display: inline-block;
+}
+
+/* Hide the login button after login */
+.header.logged-in .btnLogin-popup {
+    display: none;
+}
+
+header.visible .btnLogged{
+    border: 2px solid #4e2a00;
+    color: #4e2a00;
+}
+header.visible .btnLogged:hover{
+    background: #4e2a00;
+    color: #fdca3e;
+}
+
+.navigation .btnLogged:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+
+
+/* Initially hide the user info and form when logged in */
+.wrapper.logged-in .form-box.login,
+.wrapper.logged-in .form-box.register {
+    display: none;
+}
+
+.user-info {
+    display: none;
+}
+.user-info button{
+    top: 159px;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    background: #fefffc26;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: .9rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: -10px;
+    transition: .5s;
+}
+
+/* When logged in, make the user-info visible */
+.wrapper.logged-in .user-info {
+    display: block;
+}
+
+/* Optionally hide the login and register links */
+.wrapper.logged-in .login-link, 
+.wrapper.logged-in .register-link {
+    display: none;
+}
