@@ -153,32 +153,32 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 
 
-// for wrapper
-const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
-const btnPopup = document.querySelector('.btnLogin-popup');
-const btnLogged = document.querySelector('.btnLogged'); // logged-in button
-const iconClose = document.querySelector('.icon-close');
-console.log(wrapper, loginLink, registerLink, btnPopup, iconClose);
+// // for wrapper
+// const wrapper = document.querySelector('.wrapper');
+// const loginLink = document.querySelector('.login-link');
+// const registerLink = document.querySelector('.register-link');
+// const btnPopup = document.querySelector('.btnLogin-popup');
+// const btnLogged = document.querySelector('.btnLogged'); // logged-in button
+// const iconClose = document.querySelector('.icon-close');
+// console.log(wrapper, loginLink, registerLink, btnPopup, iconClose);
 
-registerLink.addEventListener('click', ()=>{
-    wrapper.classList.add('active');
-})
+// registerLink.addEventListener('click', ()=>{
+//     wrapper.classList.add('active');
+// })
 
-loginLink.addEventListener('click', ()=>{
-    wrapper.classList.remove('active');
-})
+// loginLink.addEventListener('click', ()=>{
+//     wrapper.classList.remove('active');
+// })
 
-btnPopup.addEventListener('click', ()=>{
-    wrapper.classList.add('active-popup');
-})
-btnLogged.addEventListener('click', ()=>{
-    wrapper.classList.add('active-popup');
-})
+// btnPopup.addEventListener('click', ()=>{
+//     wrapper.classList.add('active-popup');
+// })
+// btnLogged.addEventListener('click', ()=>{
+//     wrapper.classList.add('active-popup');
+// })
 
-iconClose.addEventListener('click', ()=>{
-    wrapper.classList.remove('active-popup');
-})
+// iconClose.addEventListener('click', ()=>{
+//     wrapper.classList.remove('active-popup');
+// })
 
 

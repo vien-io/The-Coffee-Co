@@ -6,16 +6,16 @@ $user = "root";
 $password = "";
 $dbname = "coffee_db";
 
-// Create the connection
+// create the connection here
 $conn = new mysqli($host, $user, $password, $dbname);
 
-// Check connection
+// check
 if ($conn->connect_error) {
     echo json_encode(["error" => "Connection failed: " . $conn->connect_error]);
     exit;
 }
 
-// Post request handling
+// post request handling
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
     $password = $_POST['password']; 
@@ -54,9 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verify the password
     if (password_verify($password, $user['password'])) {
         // Successful login
-        session_start(); // Start the session
-        $_SESSION['user_id'] = $user['id']; // Store the user's ID in session
-
         echo json_encode([
             "message" => "Login successful!",
             "user" => [
@@ -76,4 +73,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $conn->close();
-?>
